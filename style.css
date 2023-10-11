@@ -3,18 +3,50 @@
     --font-family-default-latin: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol",Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,"ヒラギノ角ゴ Pro W3","メイリオ",Meiryo,"ＭＳ Ｐゴシック",Arial,sans-serif;
 }
 
-body{
+body {
     margin: 0;
-    font-family: var(--font-family-default-latin);
-    height:100%;
-}
+    padding: 0;
+    position: relative;
+    height: 100%;
+    font-family: var(--font-family-default-latin);  
+    overflow-y: overlay;
+    overflow-x: hidden;
 
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 300%;
+
+  }
+
+  /* .container{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+} */
+
+  
 .section{
     position: relative;
-    height: 600px;
+    height: 660px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
 }
 
+.section.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
 
 #firstcontainer{
     background-color: #ffffff;
@@ -26,6 +58,8 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .secondCreator{
@@ -116,16 +150,150 @@ body{
     font-weight: bold;
     text-align: center;
 }
-#thirdcontainer{
-    height: 100vh;
-    background-color: rgb(218, 255, 246);
 
+#thirdcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(218, 255, 246);
+    height: 100%;
+    width: 100%;
+}
+
+.thirdCreator{
+    width: 687px;
+    height: 695px;
+    margin-top: 80px;
+    position: relative;
+}
+
+.thirdCreator p{
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.thirdContent{
+    width: 100%;
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+
+.thirdCreator, .thirdContent{
+    flex: 1;
+    color: rgb(0, 107, 108);
+}
+
+.thirdContent button{
+    border-radius: 30px;
+    background-color: rgb(0, 107, 108);
+    width: 100px;
+    min-height: 48px;
+    min-width: 93px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.thirdImage-1{
+    position: absolute;
+    top:8px;
+    left: -60px;
+    z-index: 1;
+}
+
+.thirdImage-1 img{
+    width: 400px;
+    height: 420px;
+    overflow: hidden;
+}
+
+.thirdImage-1-text{
+    position: absolute;
+    top: 20%;
+    font-size: 56px;
+    margin-left: 10%;
+}
+
+.thirdImage-2-text{
+    position: absolute;
+    top: 23%;
+    margin-left: 10%;
+    font-size: 28px;
+}
+
+.thirdImage-3-text{
+    font-size: 20px;
+    position: absolute;
+    bottom: 2%;
+    margin-left: 10%;
+}
+
+.thirdImage-4-text{
+    font-size: 28px;
+    position: absolute;
+    bottom: 15%;
+    margin-left: 10%;
+}
+
+.thirdImage-5-text{
+    font-size: 28px;
+    position: absolute;
+    top: 25%;
+    margin-left: 10%;
+}
+.thirdImage-2{
+    position: absolute;
+    top: 20px;
+    left:450px;
+}
+
+.thirdImage-2 img{
+    width: 223px;
+    height: 235px;
+   object-fit: contain;
+}
+
+.thirdImage-3{
+    position: absolute;
+    top: 300px;
+    left: 367px;
+}
+
+.thirdImage-3 img{
+    width: 165px;
+    height: 173px
+}
+
+
+.thirdImage-4{
+    position: absolute;
+    top: 460px;
+    left: 67px;
+}
+
+.thirdImage-4 img{
+    width: 223px;
+    height: 235px;
+}
+
+.thirdImage-5{
+    position: absolute;
+    top: 500px;
+    left: 330px;
+}
+
+.thirdImage-5 img{
+    width: 223px;
+    height: 235px;
 }
 
 #forthcontainer{
     background-color:rgb(255, 226, 235);
     display: flex;
     flex-direction: row;
+    height: 100%;
+    width: 100%;
 }
 
 .fourthCreater, .fourthContent{
@@ -138,7 +306,7 @@ body{
     height: 100%;
 }
 
-.fourthContent, .secondContent {
+.fourthContent, .secondContent, .thirdContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -157,14 +325,14 @@ body{
     font-weight: bold;
 }
 
-.fourthContent ,.secondContent .maincontent{
+.maincontent{
     font-size: 60px;
     width: 420px;
     font-weight: bold;
     margin-bottom: 0;
 }
 
-.fourthContent , .secondContent .subcontent{
+.subcontent{
     font-size: 24px;
     width: 420px;
     padding: 0px 25px 0 25px;
@@ -207,10 +375,35 @@ body{
 }
 
 #fifthcontainer{
-    background-color: #ffffff;
-    height: 100vh;
-
+    background-color:#ffffff;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
 }
+
+.fifthCreator{
+    width: 687px;
+    height: 695px;
+    margin-top: 80px;
+    position: relative;
+}
+
+.fifthContent{   
+    width: 484px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 32px;
+    position: relative;
+    text-align: center;
+    min-height: initial;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
+}
+
+.fifthCreator, .fifthContent{
+    flex: 1;
+    color: rgb(0, 107, 108);
+}
+
 
 #header{
     box-sizing: border-box;
@@ -273,11 +466,6 @@ body{
     padding: 10px;
 }
 
-.container{
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-}
 
 .mainSubHeader{
     color: #c28b00;
@@ -337,6 +525,7 @@ body{
     animation: bounce;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    cursor: pointer;
 }
 
 @keyframes bounce{
@@ -362,6 +551,7 @@ body{
     width: 100%;
     bottom: 0;
     height: 70px;
+    left: 0;
     display: flex;
     font-weight: 600;
     flex-direction: column;
@@ -375,4 +565,29 @@ body{
     height: 12px;
     width: 12px;
     filter: invert(100);
+}
+
+.pageupdiv{
+    z-index: 3;
+    width: 100%;
+    top: 76px;
+}
+
+.pageUp{
+    z-index: 3;
+    top: 76px;
+    background: rgb(156, 3, 67);
+    width: 25px;
+    height:25px;
+    position: absolute;
+    bottom: 80px;
+    display: flex;
+    padding: 10px;
+    border-radius: 50%;
+    left: 50%;
+    cursor: pointer;
+}
+
+.pageUp img{
+    transform: rotate(180deg);
 }
