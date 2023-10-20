@@ -4,218 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pinterest - India</title>
-    <link rel="icon" href="assets/pinterest.png" type="image/svg"/>
-    <link rel="stylesheet" href="./style.css"/>
+    <link rel="icon" href="assets/pinterest.png" type="image/svg" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
 </head>
 <body>
-    <div>
-    <div id="header">
-        <div class="sub-header">
-            <div class="header-left">
-                <div class="header-image">
-                    <a style="color: #cc0000;"><img src="./assets/pinterest.png" width="30" height="30"/></a>
-                </div>
-                <div class="header-text">
-                    Pinterest
-                </div>
-            </div>
-            <div class="header-right">
-                <div class="menus">
-                    <a>About</a>
-                    <a>Business</a>
-                    <a>Blog</a>
-                </div>
-                <div class="links">
-                    <a class="link login">Log in</a>
-                    <a class="link signup">Sign up</a>
-                </div>
-            </div>
+    <nav id="header">
+        <div class="brand">
+          <div class="logo">
+            <a style="color: #cc0000"
+              ><img src="./assets/pinterest.png" width="30" height="30"
+            /></a>
+          </div>
+          <div class="brand-name">Pinterest</div>
         </div>
+        <div class="header-links">
+          <div class="menus">
+            <a>About</a>
+            <a>Business</a>
+            <a>Blog</a>
+          </div>
+          <div class="op-links">
+            <a class="link login">Log in</a>
+            <a class="link signup">Sign up</a>
+          </div>
+        </div>
+      </nav>
 
-
-    </div>
-    <div class="container">
-        <div class="section">
-            <div id="firstcontainer">
-                <p>Get your next</p>
-                <div class="mainSubHeader">
-                    <p>chai time snacks idea</p>
-                    <div class="slider">
-                        <ul>
-                            <li><button class="sliderButton"></button></li>
-                            <li><button class="sliderButton"></button></li>
-                            <li><button class="sliderButton"></button></li>
-                            <li><button class="sliderButton"></button></li>
-                        </ul>
-                        <div class="pictureboard">
-                            <div class="pictures">
-
-                            </div>
-                            <div class="pictures">
-                                
-                            </div>
-                            <div class="pictures">
-                                
-                            </div>
-                            <div class="pictures">
-                                
-                            </div>
-                        </div>
-                        <div class="pageDown" id="pageDown">
-                            <img src="./assets/down-arrow.png" />  
-                          </div>
-                          <div class="pageDown-2">
-                            <a>Here's how it works <img src="./assets/down-arrow.png"/></a>
-                          </div>
-                    </div>
-                   
-                </div>
+      <section class="gallery">
+        <div class="gallery-title">
+            <div class="main">Get your next</div>
+            <div class="sub">chai time snacks idea</div>
+            <div class="slider-dots">
+                  <button class="sliderButton"></button>
+                  <button class="sliderButton"></button>
+                  <button class="sliderButton"></button>
+                  <button class="sliderButton"></button>
             </div>
         </div>
-
-        <div class="section">
-            <div id="secondcontainer">
-                <div class="secondCreator">
-                    <div class="secImage-1">
-                        <img src="./assets/secondPic-1.png" />
-                    </div>
-                    <div class="secImage-2">
-                        <img src="./assets/secondPic-2.png" />
-                    </div>
-    
-                    <div class="secImage-3">
-                        <img src="./assets/secondPic-3.png" />
-                    </div>
-                    <div class="secImage-4">
-                        <img src="./assets/secondPic-4.png " />
-                    </div>
-                    <div class="secSearch">
-                        <img src="./assets/magnifying-glass.png" style="width: 20px;height: 20px;padding-right: 10px;"/>
-                        <p> easy chicken dinner</p>
-                    </div>
-               </div>
-               <div class="secondContent">
-                    <p class="maincontent">Search for an idea</p>
-                    <p class="subcontent">What do you want to try next? Think of Something
-                        you're into - like "easy chicken dinner" - and see 
-                        what you find.
-                    </p>
-                    <button>Explore</button>
-               </div>
+        <div class="carousel-slides">
+            <div class="carousel-slide">
+              <div class="columns">
+                <div class="column">
+                  <img src="https://i.pinimg.com/550x/0c/18/3d/0c183dafd58d1ebdbe3cb6865e56d516.jpg" alt="poster-image" class="poster">   
+                  <img src="https://i.pinimg.com/550x/1d/ce/e7/1dcee7977b922d38bf7873462793aec5.jpg" alt="poster-image" class="poster">                     
+                  <img src="https://i.pinimg.com/550x/0c/18/3d/0c183dafd58d1ebdbe3cb6865e56d516.jpg" alt="poster-image" class="poster">            
+                  <img src="https://i.pinimg.com/550x/0c/18/3d/0c183dafd58d1ebdbe3cb6865e56d516.jpg" alt="poster-image" class="poster">            
+                </div>
+                <div class="column">
+                  <img src="https://i.pinimg.com/550x/1d/ce/e7/1dcee7977b922d38bf7873462793aec5.jpg" alt="poster-image" class="poster">   
+                  <img src="https://i.pinimg.com/550x/0c/18/3d/0c183dafd58d1ebdbe3cb6865e56d516.jpg" alt="poster-image" class="poster">            
+                  <img src="https://i.pinimg.com/550x/1d/ce/e7/1dcee7977b922d38bf7873462793aec5.jpg" alt="poster-image" class="poster">            
+                  <img src="https://i.pinimg.com/550x/1d/ce/e7/1dcee7977b922d38bf7873462793aec5.jpg" alt="poster-image" class="poster">            
+                </div>
+                <div class="column">
+                  <img src="https://i.pinimg.com/550x/43/af/6f/43af6f5aa4df62b5bc7748e40f46f4c4.jpg" alt="poster-image" class="poster">            
+                  <img src="https://i.pinimg.com/550x/43/af/6f/43af6f5aa4df62b5bc7748e40f46f4c4.jpg" alt="poster-image" class="poster">            
+                  <img src="https://i.pinimg.com/550x/43/af/6f/43af6f5aa4df62b5bc7748e40f46f4c4.jpg" alt="poster-image" class="poster">            
+                  <img src="https://i.pinimg.com/550x/43/af/6f/43af6f5aa4df62b5bc7748e40f46f4c4.jpg" alt="poster-image" class="poster">            
+                </div>
+                <div class="column">
+                  <img src="https://i.pinimg.com/550x/43/af/6f/43af6f5aa4df62b5bc7748e40f46f4c4.jpg" alt="poster-image" class="poster">            
+                  <img src="https://i.pinimg.com/550x/43/af/6f/43af6f5aa4df62b5bc7748e40f46f4c4.jpg" alt="poster-image" class="poster">            
+                  <img src="https://i.pinimg.com/550x/43/af/6f/43af6f5aa4df62b5bc7748e40f46f4c4.jpg" alt="poster-image" class="poster">            
+                  <img src="https://i.pinimg.com/550x/43/af/6f/43af6f5aa4df62b5bc7748e40f46f4c4.jpg" alt="poster-image" class="poster">            
+                </div>
+                <div class="column">
+                  <img src="https://i.pinimg.com/550x/43/af/6f/43af6f5aa4df62b5bc7748e40f46f4c4.jpg" alt="poster-image" class="poster">            
+                  <img src="https://i.pinimg.com/550x/43/af/6f/43af6f5aa4df62b5bc7748e40f46f4c4.jpg" alt="poster-image" class="poster">            
+                  <img src="https://i.pinimg.com/550x/43/af/6f/43af6f5aa4df62b5bc7748e40f46f4c4.jpg" alt="poster-image" class="poster">            
+                  <img src="https://i.pinimg.com/550x/43/af/6f/43af6f5aa4df62b5bc7748e40f46f4c4.jpg" alt="poster-image" class="poster">            
+                </div>
+                <div class="column">
+                  <img src="https://i.pinimg.com/550x/43/af/6f/43af6f5aa4df62b5bc7748e40f46f4c4.jpg" alt="poster-image" class="poster">            
+                  <img src="https://i.pinimg.com/550x/43/af/6f/43af6f5aa4df62b5bc7748e40f46f4c4.jpg" alt="poster-image" class="poster">            
+                  <img src="https://i.pinimg.com/550x/43/af/6f/43af6f5aa4df62b5bc7748e40f46f4c4.jpg" alt="poster-image" class="poster">            
+                  <img src="https://i.pinimg.com/550x/43/af/6f/43af6f5aa4df62b5bc7748e40f46f4c4.jpg" alt="poster-image" class="poster">            
+                </div>
+                <div class="column">
+                  <img src="https://i.pinimg.com/550x/43/af/6f/43af6f5aa4df62b5bc7748e40f46f4c4.jpg" alt="poster-image" class="poster">            
+                  <img src="https://i.pinimg.com/550x/43/af/6f/43af6f5aa4df62b5bc7748e40f46f4c4.jpg" alt="poster-image" class="poster">            
+                  <img src="https://i.pinimg.com/550x/43/af/6f/43af6f5aa4df62b5bc7748e40f46f4c4.jpg" alt="poster-image" class="poster">            
+                  <img src="https://i.pinimg.com/550x/43/af/6f/43af6f5aa4df62b5bc7748e40f46f4c4.jpg" alt="poster-image" class="poster">            
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
+        
+      </section>
 
-        <div class="section">
-            <div id="thirdcontainer">
-                <div class="thirdContent">
-                    <p class="maincontent">Save ideas you like</p>
-                    <p class="subcontent">Collect your favorites so you 
-                        can get back to them later
-                    </p>
-                    <button>Explore</button>
-                </div>
-                <div class="thirdCreator">
-                    <div class="thirdImage-1">
-                        <img src="./assets/thirdPic-1.png" />
-                        <p class="thirdImage-1-text">Fern future home vibes</p>
-                    </div>
-                    <div class="thirdImage-2">
-                        <img src="./assets/thirdPic-2.png" /> 
-                        <p class="thirdImage-2-text">My Scandinavian bedroom</p>                  
-                    </div>
-                    
-                    <div class="thirdImage-3">
-                        <img src="./assets/thirdPic-3.png" />
-                        <p class="thirdImage-3-text">The deck of my dreams</p>
-                    </div>
-                    <div class="thirdImage-4">
-                        <img src="./assets/thirdPic-4.png " />
-                        <p class="thirdImage-4-text">Serve my drinks in</p>
-                    </div>
-                    <div class="thirdImage-5">
-                        <img src="./assets/thirdPic-5.png" />
-                        <p class="thirdImage-5-text">Our bathroom</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <section class="searchIdea">
+      </section>
+      
+      <section class="saveIdea">
 
-        <div class="section">
-            <div id="forthcontainer">
-                <div class="fourthCreater">
-                    <img src="./assets/fourbackground-1.png">
-                </div>
-                <div class="statusImage">
-                    <img src="./assets/fourStatus.png" />
-                </div>
-                <div class="profileImage">
-                    <img src="./assets/fourTinyImage.png" />
-                </div>
-                <div class="profileContent">
-                    <span>Scout the City</span>
-                    <span>56.7k followers</span>
-                </div>
-                <div class="fourthContent">
-                    <p class="maincontent">See it, make it, try it, do it</p>
-                    <p class="subcontent">The best part of Pinterest is discovering new things and ideas
-                        from people around the world.
-                    </p>
-                    <button>Explore</button>
-                </div>
-            </div> 
-        </div>
+      </section>
 
-        <div class="section">
-            <div id="fifthcontainer">
-                <div class="pageupdiv">
-                    <div class="pageUp" id="pageUp">
-                        <img src="./assets/down-arrow.png" />  
-                      </div>
-                   </div>
-                  <div class="fifthCreator">
-                    
-                  </div>
-                  <div class="fifthContent">
-                    <div>
-                        <div>
-                            Welcome to Pinterest
-                        </div>
-                        <div>
-                            Find new ideas to try
-                        </div>
-                        <div>
-                            <div>
-                                <form>
-                                    <div>
-                                        <label>Email</label>
-                                        <input type="text">
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>                 
-                  </div>
-            </div>
-           
-        </div>
-        <div class="footer">
-            <a>Terms of Service</a>
-            <a>Privacy Policy</a>
-            <a>Help</a>
-            <a>Iphone App</a>
-            <a>Andriod App</a>
-            <a>Users</a>
-            <a>Collections</a>
-            <a>Shopping</a>
-            <a>Today</a>
-            <a>Explore</a>
-            <a>Watch</a>
-            <a>Shop</a>
-        </div>
-    </div>
-   
-</div>
+      <section class="tryIdea">
 
-<script src="./script.js"></script>
+      </section>
+
+      <section class="signup">
+
+      </section>
 </body>
 </html>
