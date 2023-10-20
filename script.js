@@ -6,7 +6,7 @@ const handleScroll = () => {
     const sectionHeight = section.clientHeight;
     console.log(sectionHeight)
     if (window.scrollY >= sectionTop - sectionHeight / 2) {
-      section.classList.add('active');
+      section.classList.add('active'); 
     } else {
       section.classList.remove('active');
     }
