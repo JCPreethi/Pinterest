@@ -112,12 +112,14 @@ section.gallery{
 
 section.gallery .gallery-title{
   text-align: center;
-  padding-top:100px ;
+  padding-top:160px ;
   font-size: 60px;
   font-weight: 500;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  margin-bottom: 20px;
 }
 
 section.gallery .gallery-title .sub {
@@ -141,6 +143,7 @@ section.gallery .slider-dots .sliderButton{
 
 section.gallery .carousel-slides {
   width: 100%;
+  margin-top: -160px;
 }
 
 section.gallery .carousel-slides .carousel-slide {
@@ -162,7 +165,7 @@ section.gallery .carousel-slides .carousel-slide .column{
 }
 
 section.gallery .carousel-slides .carousel-slide img{
-  width: 300px;
+  width:100%;
   height: auto;
   border-radius: 10px;
   aspect-ratio: 9/16;
