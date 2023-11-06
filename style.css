@@ -112,12 +112,14 @@ section.gallery{
 
 section.gallery .gallery-title{
   text-align: center;
-  padding-top:100px ;
+  padding-top:160px ;
   font-size: 60px;
   font-weight: 500;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  margin-bottom: 20px;
 }
 
 section.gallery .gallery-title .sub {
@@ -141,6 +143,7 @@ section.gallery .slider-dots .sliderButton{
 
 section.gallery .carousel-slides {
   width: 100%;
+  margin-top: -160px;
 }
 
 section.gallery .carousel-slides .carousel-slide {
@@ -162,7 +165,7 @@ section.gallery .carousel-slides .carousel-slide .column{
 }
 
 section.gallery .carousel-slides .carousel-slide img{
-  width: 300px;
+  width:100%;
   height: auto;
   border-radius: 10px;
   aspect-ratio: 9/16;
@@ -200,7 +203,7 @@ section.gallery .carousel-slides .carousel-slide .column:nth-child(7){
   bottom: 0;
   background-color: rgb(255, 253, 146);
   width: 100%;
-  font-size: 24px;
+  font-size: 12px;
   font-weight: 600;
   display: flex;
   height: 50px;
@@ -226,7 +229,140 @@ section.gallery .gallery-footer::after {
 
 section.searchIdea{ 
   background-color: rgb(255, 253, 146);
+  justify-content: flex-start;
+  position: relative;
 }
+
+section.searchIdea .container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+}
+
+section.searchIdea .searchIdeaImages{
+  width: 537px;
+  height: 611px;
+
+}
+
+section.searchIdea .searchIdeaImages .Image-1 {
+  position: absolute;
+  top: 0px;
+  left: 355px;
+}
+
+section.searchIdea .searchIdeaImages .Image-1 img {
+  width: 178px;
+  height: 218px;
+  overflow: hidden;
+  position: relative;
+  object-fit: cover;
+}
+
+section.searchIdea .searchIdeaImages .Image-2 {
+  position: absolute;
+  top: 149px;
+  left: 21px;
+}
+
+section.searchIdea .searchIdeaImages .Image-2 img {
+  width: 204px;
+  height: 285px;
+  overflow: hidden;
+  position: relative;
+  object-fit: cover;
+}
+
+section.searchIdea .searchIdeaImages .Image-3 {
+  position: absolute;
+  bottom: 0px;
+  left: 360px;
+}
+
+section.searchIdea .searchIdeaImages .Image-3 img {
+  width: 164px;
+  height: 258px;
+  overflow: hidden;
+  position: relative;
+  object-fit: cover;
+}
+
+section.searchIdea .searchIdeaImages .Image-4 {
+  position: absolute;
+  top: 88px;
+  left: 148px;
+}
+
+section.searchIdea .searchIdeaImages .Image-4 img {
+  width: 298px;
+  height: 456px;
+  overflow: hidden;
+  position: relative;
+  object-fit: cover;
+}
+
+section.searchIdea .searchIdeaImages .Search {
+  top: 231px;
+  left: 103px;
+  height: 100px;
+  width: 316px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  border-radius: 999px;
+  background-color: #ffffff;
+}
+
+.secSearch p {
+  font-size: 24px;
+  color: rgb(110, 15, 60);
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.maincontent {
+  font-size: 60px;
+  width: 420px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.subcontent {
+  font-size: 24px;
+  width: 420px;
+  padding: 0px 25px 0 25px;
+}
+
+section.searchIdea .container .searchIdeaImages,.searchIdeaContent {
+  color: rgb(195, 25, 82);
+}
+
+.searchIdeaContent button {
+  border-radius: 30px;
+  background-color: rgb(195, 25, 82);
+  width: 100px;
+  min-height: 48px;
+  min-width: 93px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.searchIdeaContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
 
 section.saveIdea {
   background-color: rgb(218, 255, 246);
